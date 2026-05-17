@@ -14,9 +14,11 @@ body {
     text-align: center;
 }
 
-.todo-container {
+#todo-container {
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  gap: 20px;
   align-items: center;
   height: 100vh; /* Ensure the parent has a height for vertical centering */
 }
