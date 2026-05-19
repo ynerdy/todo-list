@@ -1,8 +1,9 @@
 body {
-    background-color: rgb(11, 11, 112);
+    background-color: rgb(2, 2, 24);
 }
 
 #main-header {
+    color: white;
     text-align: center;
 }
 
