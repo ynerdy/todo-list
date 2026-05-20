@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Makes layout sizing much easier to handle */
+}
+
 body {
     background-color: rgb(2, 2, 24);
 }
