@@ -11,7 +11,7 @@ addBtn.addEventListener("click", function() {
     let userText = taskInput.value;
     // 2. Print that specific text to the console
     console.log(userText);
-    // apprantly i need this and go check on GEMINI again bc it basically gave me 
+    // apprantly i need this (the "newLI" thingy) and go check on GEMINI again bc it basically gave me 
     // a refactored ver of this whole JS in theory easier to read for a beginer like me ig idk
     let newLI = document.createElement("li");
 });
