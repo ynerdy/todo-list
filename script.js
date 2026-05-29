@@ -13,6 +13,9 @@ addBtn.addEventListener("click", function() {
     console.log(userText);
     // apprantly i need this (the "newLI" thingy) and go check on GEMINI again bc it basically gave me 
     // a refactored ver of this whole JS in theory easier to read for a beginer like me ig idk
+    // Step 1: Create a brand new, blank <li> element in memory
     let newLI = document.createElement("li");
+    // Step 2: YOUR TURN! Put the userText inside the newLI textContent
+    // Formula: elementName.textContent = someValue;
 });
 
