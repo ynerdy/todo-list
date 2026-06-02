@@ -24,14 +24,24 @@ function handleAddTask() {
 
     // 3. Put the user's text inside our new blank <li> element
     newLI.textContent = userText;
-    
-    // 4. (Next step) We will actually append this to our todoList here!
+
+    // Drop it into the <ul> list container
+    todoList.appendChild(newLI);
 }
 
 
+// STEP 3: Tool B - The Keyboard Inspector
+function handleKeyDown(eventPackage) {
+    // If the key inside the packet is exactly "Enter", run Tool A
+    if (eventPackage.key === "Enter") {
+        handleAddTask();
+    }
+}
+
 // ==========================================
-// STEP 3: ATTACH THE TRIGGER (THE EVENT LISTENER)
+// STEP 4: ATTACH THE TRIGGER (THE EVENT LISTENER)
 // ==========================================
 // We tell our button variable to listen for a "click". 
 // When that click happens, it goes and runs our "handleAddTask" tool above.
 addBtn.addEventListener("click", handleAddTask);
+taskInput.addEventListener("keydown", handleKeyDown);
