@@ -27,6 +27,9 @@ function handleAddTask() {
 
     // Drop it into the <ul> list container
     todoList.appendChild(newLI);
+    
+    // this "wipes" the word on the input box it clears it for better UX yk?
+    taskInput.value = "";
 }
 
 
