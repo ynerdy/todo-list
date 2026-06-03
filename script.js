@@ -17,19 +17,21 @@ function handleAddTask() {
 
     // 1. Grab the literal text typed inside the input box and save it
     let userText = taskInput.value;
-    console.log("User typed:", userText);
-
-    // 2. Create a brand new, empty <li> element entirely in JS memory
-    let newLI = document.createElement("li");
-
-    // 3. Put the user's text inside our new blank <li> element
-    newLI.textContent = userText;
-
-    // Drop it into the <ul> list container
-    todoList.appendChild(newLI);
     
-    // this "wipes" the word on the input box it clears it for better UX yk?
-    taskInput.value = "";
+    if (userText !== "") {
+        console.log("User typed:", userText);
+        // 2. Create a brand new, empty <li> element entirely in JS memory
+        let newLI = document.createElement("li");
+
+        // 3. Put the user's text inside our new blank <li> element
+        newLI.textContent = userText;
+
+        // Drop it into the <ul> list container
+        todoList.appendChild(newLI);
+
+        // this "wipes" the word on the input box it clears it for better UX yk?
+        taskInput.value = "";
+    }
 }
 
 
