@@ -32,6 +32,8 @@ body {
 }
 
 li {
-    color: white;
-    font-size: 1.2rem; /* Makes it a little bigger and easier to read */
+    color: white;           /* Turns the text and the bullet points bright white */
+    font-size: 1.3rem;      /* Makes the text a little bigger and easier to read */
+    font-family: sans-serif;/* Makes the font look clean and modern, not blocky */
+    margin-bottom: 10px;    /* Adds space between your tasks so they don't smash together */
 }
