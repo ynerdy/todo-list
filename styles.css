@@ -37,3 +37,11 @@ li {
     font-family: sans-serif;/* Makes the font look clean and modern, not blocky */
     margin-bottom: 10px;    /* Adds space between your tasks so they don't smash together */
 }
+
+/* 1. Define how the input box behaves when it has the "error-flash" class */
+.error-flash {
+    outline: 2px solid red !important;
+    border-color: red !important;
+    /* This makes any style changes smoothly transition over 0.5 seconds like a breathing effect */
+    transition: all 0.5s ease-in-out; 
+}
