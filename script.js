@@ -14,7 +14,6 @@ function handleAddTask() {
 
     // The guard checks if it's NOT empty
     if (userText !== "") {
-        
         console.log("User typed:", userText);
 
         let newLI = document.createElement("li");
