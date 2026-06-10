@@ -18,6 +18,10 @@ function handleAddTask() {
 
         let newLI = document.createElement("li");
         newLI.textContent = userText;
+        // 1. Run our factory function, catch the button it shoots out, and save it!
+        let deleteBtn = makeDeleteButton();
+        // 2. Shove that newly caught button inside our <li> container!
+        newLI.appendChild(deleteBtn);
         todoList.appendChild(newLI);
 
         taskInput.value = "";
