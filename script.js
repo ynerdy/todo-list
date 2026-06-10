@@ -44,6 +44,22 @@ function handleKeyDown(eventPackage) {
     }
 } // 👈 This brace completely closes handleKeyDown safely
 
+
+// Tool C: A dedicated helper whose ONLY job is to build an "X" button
+function makeDeleteButton() {
+    // 1. Manufacture a physical button element in JavaScript memory
+    let btn = document.createElement("button");
+    
+    // 2. Put the letter X inside it
+    btn.textContent = "X";
+    
+    // 3. Give it a specific class name so we can style it in CSS later
+    btn.classList.add("delete-btn");
+    
+    // 4. Hand the finished button back to whoever called this tool
+    return btn; 
+}
+
 // ==========================================
 // STEP 3: ATTACH THE TRIGGERS
 // ==========================================
