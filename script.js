@@ -86,3 +86,4 @@ function makeDeleteButton() {
 // ==========================================
 addBtn.addEventListener("click", handleAddTask);
 taskInput.addEventListener("keydown", handleKeyDown);
+todoList.addEventListener("click", handleListClick);
