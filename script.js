@@ -9,7 +9,7 @@ let todoList = document.getElementById("todo-list");
 // STEP 2: DEFINE THE ACTIONS (THE FUNCTIONS)
 // ==========================================
 
-function userPressEnter() {
+function addTask() {
     let userText = taskInput.value;
 
     // The guard checks if it's NOT empty
@@ -44,7 +44,7 @@ function userPressEnter() {
 // Tool B: The Keyboard Inspector
 function handleKeyDown(eventPackage) {
     if (eventPackage.key === "Enter") {
-        userPressEnter();
+        addTask();
     }
 } // 👈 This brace completely closes handleKeyDown safely
 
@@ -84,6 +84,6 @@ function makeDeleteButton() {
 // ==========================================
 // STEP 3: ATTACH THE TRIGGERS
 // ==========================================
-addBtn.addEventListener("click", userPressEnter);
+addBtn.addEventListener("click", addTask);
 taskInput.addEventListener("keydown", handleKeyDown);
 todoList.addEventListener("click", handleListClick);
