@@ -1,7 +1,8 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; /* Makes layout sizing much easier to handle */
+    box-sizing: border-box;
+    /* Makes layout sizing much easier to handle */
 }
 
 body {
@@ -22,20 +23,26 @@ body {
 }
 
 #todo-container {
-  display: flex;
-  justify-content: flex-start; /* 👈 Aligns items to the top instead of the center */
-  flex-direction: column;
-  gap: 20px;
-  align-items: center;
-  height: 100vh; 
-  padding-top: 100px;         /* 👈 Adds a nice clean cushion at the top of the screen */
+    display: flex;
+    justify-content: flex-start;
+    /* 👈 Aligns items to the top instead of the center */
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    height: 100vh;
+    padding-top: 100px;
+    /* 👈 Adds a nice clean cushion at the top of the screen */
 }
 
 li {
-    color: white;           /* Turns the text and the bullet points bright white */
-    font-size: 1.3rem;      /* Makes the text a little bigger and easier to read */
-    font-family: sans-serif;/* Makes the font look clean and modern, not blocky */
-    margin-bottom: 10px;    /* Adds space between your tasks so they don't smash together */
+    color: white;
+    /* Turns the text and the bullet points bright white */
+    font-size: 1.3rem;
+    /* Makes the text a little bigger and easier to read */
+    font-family: sans-serif;
+    /* Makes the font look clean and modern, not blocky */
+    margin-bottom: 10px;
+    /* Adds space between your tasks so they don't smash together */
 }
 
 /* 1. Define how the input box behaves when it has the "error-flash" class */
@@ -43,5 +50,44 @@ li {
     outline: 2px solid red !important;
     border-color: red !important;
     /* This makes any style changes smoothly transition over 0.5 seconds like a breathing effect */
-    transition: all 0.5s ease-in-out; 
+    transition: all 0.5s ease-in-out;
+}
+
+/* Make each task row look like a neat card */
+#todo-list li {
+    display: flex;
+    justify-content: space-between;
+    /* Pushes text to the left, X button to the far right */
+    align-items: center;
+    /* Centers them vertically */
+    background-color: #f4f4f9;
+    padding: 10px 15px;
+    margin-bottom: 8px;
+    border-radius: 6px;
+    list-style-type: none;
+    /* Removes default ugly bullet points */
+    color: #222;
+    width: fit-content;
+    /* box shrinks/grows to fit the text */
+    max-width: 100%;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+/* Style the "X" delete button */
+.delete-btn {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    /* Turns mouse pointer into a clickable hand */
+    font-weight: bold;
+    transition: background-color 0.2s;
+}
+
+/* Make the button darken slightly when hovered over */
+.delete-btn:hover {
+    background-color: #cc0000;
 }

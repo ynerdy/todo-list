@@ -1,4 +1,9 @@
-// i wanna TEST writing an OBJECT here 
+// ==========================================
+// YOOO WAIT MY BAD 😭😭😭 i need to (probably) REMOVE this file in the end 😭
+// i just sorta have it here idk cuz i wanted to experiment with JS yk? (still learning after all) 😅
+// ==========================================
+
+// i wanna TEST writing an OBJECT here (like? by myself? from memory? idk)
 const hero = {
     age: 19,
     deposit(amount) {
