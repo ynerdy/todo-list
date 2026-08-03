@@ -55,7 +55,7 @@ function handleListClick(eventPackage) {
     // 1. Check if the exact HTML element the user clicked has the class "delete-btn"
     if (eventPackage.target.classList.contains("delete-btn")) {
         
-        console.log("Delete button caught! Removing task...");
+        console.log("Delete button caught! Removed Task");
         
         // eventPackage.target is the <button>
         // .parentElement climbs up one level to find the <li> that holds it!
